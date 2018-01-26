@@ -1,61 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
+    <style></style>
+    <style></style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Bayan Park Village | Home</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="icon" href="images/Logo.png">
 </head>
 
 <body>
     <header>
-        <h1>Peace and Order</h1>
-        <p>Aurora Hill Baguio City</p>
+        <div class="container">
+            <img alt="logo" src="images/Logo.png" width="50px;" class="logo">
+            <div id="heading">
+                
+                <h1><span class="highlight">Bayan Park</span> Village</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li class="current"><a href="">Home</a></li>
+                    <li><a href="">Advocacies</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Organizational Structure</a></li>
+                    <li><a href="webpages/about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">Advocacies</a>
-            </li>
-            <li>
-                <a href="">Gallery</a>
-            </li>
-            <li>
-                <a href="">Organizational Structure</a>
-            </li>
-            <li>
-                <a href="webpages/about.html">About</a>
-            </li>
-        </ul>
-    </nav>
-
     <main>
-        <section>
-            <h2>Topic 1</h2>
-            <article>
-            </article>
+        <section id="slideshow">
+            <div class="slide-container">
+                <input type="radio" name="images" id="img1" checked>
+                <input type="radio" name="images" id="img2">
+                <input type="radio" name="images" id="img3">
+                
+                <div class="slide-img" id="one">
+                    <img src="./images/Slide01.jpg">
+                    <label for="img3" class="prev"></label>
+                    <label for="img2" class="next"></label>
+                </div>
+                <div class="slide-img" id="two">
+                    <img src="./images/Slide02.jpg">
+                    <label for="img1" class="prev"></label>
+                    <label for="img3" class="next"></label>
+                </div>
+                <div class="slide-img" id="three">
+                    <img src="./images/Slide03.jpg">
+                    <label for="img2" class="prev"></label>
+                    <label for="img1" class="next"></label>
+                </div>
+                
+                <div class="slide-nav">
+                    <label class="dots" id="dot1" for="img1"></label>
+                    <label class="dots" id="dot2" for="img2"></label>
+                    <label class="dots" id="dot3" for="img3"></label>
+                </div>
+            </div>
         </section>
         
         <section>
-            <h2>Topic 2</h2>
-            <article>
-            </article>
+            <div class="divider">
+            </div>
+        </section>
+
+        <section id="advocacies">
+            <div class="container">
+                <div class="box">
+                    <img src="./images/PeaceAndOrder.png" width="300px">
+                    <h3>Peace and Order</h3>
+                    <p>some text here</p>
+                </div>
+                <div class="box">
+                    <img src="./images/DrugAbuse.png" width="300px">
+                    <h3>Substance Abuse Prevention</h3>
+                    <p>some text here</p>
+                </div>
+                <div class="box">
+                    <img src="./images/Environment.png" width="300px">
+                    <h3>Environmental Protection</h3>
+                    <p>some text here</p>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <aside>
-    
-    </aside>
-    
+
     <footer>
-    
+        <p>Bayan Park Village, Copyright &copy; 2018</p>
     </footer>
 
 </body>
-
-</html>

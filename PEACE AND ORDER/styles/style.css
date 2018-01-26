@@ -1,66 +1,262 @@
 * {
-    margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    margin: 0;
 }
 
-main, nav, header, footer, section, article, aside{
-    display: block;
+body {
+    font-family: Arial, Helvitica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-body{
-    width: 900px;
-    margin:auto;
-}
-
-header{
-    padding: 10px;
-    background-color: darkblue;
-    color: white;
-}
-
-nav{
-    padding: 10px;
-    color: white;
-    background-color: deepskyblue
-}
-
-li{
-    display: inline;
-    padding: 0 10px;
-    font-size: 18px;
-}
-
-li a{
+.container {
+    width: 80%;
     margin: auto;
-    padding: 0 10px;
+    overflow: hidden;
+}
+
+.divider {
+    width: 100%;
+    margin: auto;
+    background-color: #35424A;
+    min-height: 70px;
+}
+
+.dark {
+    padding: 15px;
+    background-color: #35424a;
+    color: wheat;
+    margin: 10px 0;
+}
+
+/* Header */
+
+header {
+    background-color: #35424A;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header #heading {
+    float: left;
+}
+
+.logo{
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {}
+
+header ul li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header li a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
-main{
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Slide Show*/
+
+#slideshow {
+    min-height: 500px;
+    background: url(../images/Slide01.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.slide-container{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: inherit;
+    padding-bottom: 40%;
+}
+
+.slide-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#img1, #img2, #img3{
+    display: none;
+}
+
+.prev, .next{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88,88,88,.4);
+    z-index: 99;
+    cursor: pointer;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.slide-nav{
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.6);
+}
+
+.slide-img{
+    z-index: -1;
+}
+
+#img1:checked ~ #one,
+#img2:checked ~ #two,
+#img3:checked ~ #three{
+    z-index: 9;
+}
+
+#img1:checked ~ .slide-nav #dot1,
+#img2:checked ~ .slide-nav #dot2,
+#img3:checked ~ .slide-nav #dot3{
+    background: #fff;
+}
+
+#slideshow h1 {
+    margin: 100px 0 10px 0;
+    font-size: 55px;
+}
+
+#slideshow p {
+    font-size: 20px;
+}
+
+#advocacies {
+    margin-top: 20px;
+}
+
+#advocacies .box {
     float: left;
-    width: 650px;
-    height: 480px;
-    padding: 20px;
-    background-color: skyblue;
-    margin: auto;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
 }
 
-section{
-    padding: 10px;
-    background-color: aquamarine
+#advocacies .box img {
+    width: 100px;
 }
 
-article{
-    padding: 10px;
-    background-color: aliceblue
-}
+/*About*/
 
-aside{
-    padding: 10px;
-    width: 190px;
-    height: 500px;
+/* Sidebar */
+
+aside#sidebar {
     float: right;
-    background-color: dodgerblue
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Main Col*/
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/*Main Topic*/
+
+ul#topics li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+}
+
+
+footer {
+    clear: both;
+    padding: 20px;
+    margin-top: 20p;
+    color: white;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/*Media Queries*/
+
+@media(max-width: 768px) {
+    header #heading,
+    header nav,
+    header nav li,
+    #advocacies .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    aside#sidebar ul,
+    aside#sidebar h3 {
+        display: none;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #slideshow h1 {
+        margin-top: 40px;
+    }
+
+
 }
