@@ -19,7 +19,7 @@ header{
     background-color: limegreen;
     color: white;
     padding 5px;
-    height: 80px;
+    height: 100px;
 
 }
 
@@ -29,10 +29,12 @@ nav{
     color: white;
     overflow: hidden;
     position: fixed; 
-    top: 10%;
+    top: 0%;
     width: 900px;
+    transition: top 0.3s;
     
 }
+
 
 li{
     display: inline;
