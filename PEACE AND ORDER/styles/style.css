@@ -1,31 +1,32 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-    background-color: #f2f2f2;
     font-family: sans-serif;
+    background-color: rgb(242, 242, 242);
 }
 
 main {
     width: 90%;
     margin: auto;
-    box-shadow: 0px 0px 20px grey;
+    box-shadow: grey 0px 0px 20px;
 }
-
-/*Global*/
 
 .container {
     width: 80%;
     margin: auto;
 }
 
-.highlight {
-    color: #008ae6;
+.default {
+    min-height: 500px;
+    background-color: white;
 }
 
-/*Header*/
+.highlight {
+    color: rgb(0, 138, 230);
+}
 
 header {
     font-family: monospace;
@@ -41,8 +42,6 @@ header {
 header img {
     float: left;
 }
-
-/*Navigation*/
 
 nav {
     font-size: 20px;
@@ -60,48 +59,44 @@ nav li a {
 }
 
 .current a {
-    color: #008ae6;
+    color: rgb(0, 138, 230);
 }
-
-/*contents*/
 
 #home-content1 {
     clear: both;
-    background: url(../images/BG.png) no-repeat center;
-    background-size: cover;
     min-height: 500px;
     font-size: 40px;
     color: white;
     text-align: center;
-
+    background: url("../images/BG.png") no-repeat center;
+    background-size: cover;
 }
 
 #home-content1 p {
     padding-top: 100px;
-    ;
 }
 
 #home-content2 {
-
-    background: url(../images/BG2.png) no-repeat center;
-    background-size: cover;
     min-height: 500px;
+    background: url("../images/BG2.png") no-repeat center;
+    background-size: cover;
+    
 }
 
 .content {
-    margin: 100 30px;
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 0px 0px 15px grey;
+    margin: 100px 30px;
+    box-shadow: grey 0px 0px 15px;
     color: white;
     float: left;
     width: 40%;
+    background-color: rgba(0, 0, 0, 0.85098);
 }
 
 .content h3 {
     padding: 10px;
     text-align: center;
     font-size: 30px;
-    background-color: #3399ff;
+    background-color: rgb(51, 153, 255);
 }
 
 .content p {
@@ -110,12 +105,27 @@ nav li a {
     padding: 10px;
 }
 
+.content table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+}
+
+.content table{
+    width: 100%;
+}
+
+.content th{
+    color: rgb(51, 153, 255);
+}
+
 footer {
     padding-top: 20px;
     text-align: center;
     width: 90%;
     margin: auto;
-    background-color: #007acc;
     min-height: 45px;
-    box-shadow: 0 5px 10px 2px grey;
+    box-shadow: grey 0px 5px 10px 2px;
+    background-color: rgb(0, 122, 204);
 }
