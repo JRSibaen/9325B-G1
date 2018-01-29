@@ -20,6 +20,7 @@ main {
 }
 
 .default {
+    overflow: auto;
     min-height: 500px;
     background-color: white;
 }
@@ -63,6 +64,7 @@ nav li a {
 }
 
 #home-content1 {
+    overflow: auto;
     clear: both;
     min-height: 500px;
     font-size: 40px;
@@ -72,11 +74,12 @@ nav li a {
     background-size: cover;
 }
 
-#home-content1 p {
+#home-content1 p { 
     padding-top: 100px;
 }
 
 #home-content2 {
+    overflow: auto;
     min-height: 500px;
     background: url("../images/BG2.png") no-repeat center;
     background-size: cover;
@@ -84,11 +87,11 @@ nav li a {
 }
 
 .content {
-    margin: 100px 30px;
+    margin: 30px auto;
+    padding: 10px;
     box-shadow: grey 0px 0px 15px;
     color: white;
-    float: left;
-    width: 40%;
+    width: 90%;
     background-color: rgba(0, 0, 0, 0.85098);
 }
 
@@ -167,7 +170,7 @@ footer {
 .gal-container {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 33.3%;
 }
 
 .clearfix:after {
