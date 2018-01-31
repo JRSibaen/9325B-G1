@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    width: 90%;
+    width: 80%;
     margin: auto;
     box-shadow: grey 0px 0px 20px;
 }
@@ -126,7 +126,7 @@ nav li a {
 footer {
     padding-top: 20px;
     text-align: center;
-    width: 90%;
+    width: 80%;
     margin: auto;
     min-height: 45px;
     box-shadow: grey 0px 5px 10px 2px;
