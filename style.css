@@ -32,6 +32,10 @@ body {
     margin: 10px 0;
 }
 
+section h2{
+    display: none;
+}
+
 /* Header */
 
 header {
@@ -181,7 +185,7 @@ header a:hover {
     color: black;
 }
 
-#advocacies h1 {
+#advocacies h3 {
     font-size: 35px;
     text-align: center;
     padding: 10px 0;
