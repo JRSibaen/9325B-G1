@@ -15,8 +15,8 @@ main {
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    padding: 0 5%;
 }
 
 .default {
@@ -66,7 +66,7 @@ nav li a {
 #home-content1 {
     overflow: auto;
     clear: both;
-    min-height: 500px;
+    min-height: 90%;
     font-size: 40px;
     color: white;
     text-align: center;
@@ -88,11 +88,29 @@ nav li a {
 
 .content {
     margin: 30px auto;
-    padding: 10px;
+    padding: 1%;
     box-shadow: grey 0px 0px 15px;
     color: white;
-    width: 90%;
+    width: 80%;
     background-color: rgba(0, 0, 0, 0.85098);
+    overflow: auto;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+.content img{
+    width: 49%;
+    height: auto;
+}
+
+.content div{
+    width: 49%;
 }
 
 .content h3 {
@@ -116,7 +134,9 @@ nav li a {
 }
 
 .content table{
-    width: 100%;
+    width: 49%;
+    margin-top: 2%;
+    float: left;
 }
 
 .content th{
