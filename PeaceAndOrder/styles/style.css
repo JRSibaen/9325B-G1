@@ -14,7 +14,7 @@ main {
     box-shadow: grey 0px 0px 20px;
 }
 
-section h2{
+section h2 {
     display: none;
 }
 
@@ -68,11 +68,12 @@ nav li a {
 }
 
 /*Advocacies Dropdown*/
-li.dropdown{
+
+li.dropdown {
     display: inline-block;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
@@ -97,7 +98,7 @@ li.dropdown{
 #home-content1 {
     overflow: auto;
     clear: both;
-    min-height: 500px;
+    min-height: 600px;
     font-size: 40px;
     color: white;
     text-align: center;
@@ -105,8 +106,8 @@ li.dropdown{
     background-size: cover;
 }
 
-#home-content1 p { 
-    padding-top: 100px;
+#home-content1 p {
+    padding-top: 200px;
 }
 
 #home-content2 {
@@ -114,7 +115,7 @@ li.dropdown{
     min-height: 500px;
     background: url("../images/BG2.png") no-repeat center;
     background-size: cover;
-    
+
 }
 
 .content {
@@ -127,20 +128,20 @@ li.dropdown{
     overflow: auto;
 }
 
-.f-left{
+.f-left {
     float: left;
 }
 
-.f-right{
+.f-right {
     float: right;
 }
 
-.content img{
+.content img {
     width: 49%;
     height: auto;
 }
 
-.content div{
+.content div {
     width: 49%;
 }
 
@@ -157,20 +158,22 @@ li.dropdown{
     padding: 10px;
 }
 
-.content table, th, td {
+.content table,
+th,
+td {
     border: 1px solid white;
     border-collapse: collapse;
     color: white;
     text-align: center;
 }
 
-.content table{
+.content table {
     width: 49%;
     margin-top: 2%;
     float: left;
 }
 
-.content th{
+.content th {
     color: rgb(51, 153, 255);
 }
 
@@ -185,14 +188,15 @@ footer {
 }
 
 /*Gallery*/
-#gallery-heading{
+
+#gallery-heading {
     padding: 20px 0;
     text-align: center;
     color: white;
     background-color: rgb(102, 102, 102);
 }
 
-#main-gallery{
+#main-gallery {
     padding: 40px;
 }
 
@@ -228,4 +232,60 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+/*About*/
+
+#about {
+    background-image: url(../images/BG3.jpg);
+    overflow: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+#about h1 {
+    padding: 3%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 138, 230, 0.90);
+}
+
+#history{
+    float: left;
+    margin: 30px auto;
+    box-shadow: grey 0px 0px 15px;
+    color: white;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#history h3{
+    padding: 2%;
+    font-size: 25px;
+    background-color: rgba(0, 138, 230, 0.4);
+}
+
+#history p{
+    padding: 3%;
+}
+
+#sidebar{
+    float: right;
+    color: white;
+    width: 24%;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#sidebar h3{
+    padding: 3%;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(0, 138, 230, 0.4);
+}
+
+#sidebar p{
+    padding: 10px;
 }
