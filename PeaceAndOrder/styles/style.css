@@ -67,10 +67,37 @@ nav li a {
     color: rgb(0, 138, 230);
 }
 
+/*Advocacies Dropdown*/
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Contents Below*/
+
 #home-content1 {
     overflow: auto;
     clear: both;
-    min-height: 90%;
+    min-height: 500px;
     font-size: 40px;
     color: white;
     text-align: center;
