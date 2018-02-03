@@ -269,7 +269,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-#history h3{
+h3#about-head{
+    text-align: center;
     padding: 2%;
     font-size: 25px;
     background-color: rgba(0, 138, 230, 0.4);
@@ -279,7 +280,7 @@ footer {
     padding: 3%;
 }
 
-#sidebar{
+.sidebar{
     float: right;
     color: white;
     width: 24%;
@@ -287,13 +288,13 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-#sidebar h3{
+.sidebar h3{
     padding: 3%;
     text-align: center;
     font-size: 22px;
     background-color: rgba(0, 138, 230, 0.4);
 }
 
-#sidebar p{
+.sidebar p{
     padding: 10px;
 }
