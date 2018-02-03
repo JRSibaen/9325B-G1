@@ -214,9 +214,9 @@
 }
 
 .middle-xs {
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: right;
+  -webkit-box-align: right;
+  align-items: right;
 }
 
 .bottom-xs {
