@@ -107,7 +107,12 @@ li.dropdown {
 }
 
 #home-content1 p {
-    padding-top: 200px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 100px;
+    background-color:  rgba(13, 13, 13, .5);
 }
 
 #home-content2 {
