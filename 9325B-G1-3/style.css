@@ -25,15 +25,16 @@ header{
     text-align: left;
 
 }
+
 #p{
     margin-left: 100px;
-
+}
 
 nav{
     
     background-color: green;
     color: white;
-    overfl+ow: hidden;
+    overflow: hidden;
     position: fixed; 
     top: 13.2%;
     width: 100%;
