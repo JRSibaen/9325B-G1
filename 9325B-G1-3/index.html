@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css" title="main">
     <link rel="alternate stylesheet" href="./styles/altstyles/atlstyle.css" title="alternate">
+    <script src="styleswitcher.js"></script>
     <title>Bayan Park Village</title>
 </head>
 
@@ -37,6 +38,13 @@
             <li><a href="./webpages/gallery.html">gallery</a></li>
             <li><a href="./webpages/VisionMission.html">Vision Mission</a></li>
             <li><a href="./webpages/about.html">About</a></li>
+            <li class="dropdown">
+                <a class="droplink">Change Style</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="setActiveStyleSheet('main'); return false;">Default</a> 
+		            <a href="#" onclick="setActiveStyleSheet('alternate'); return false;">Fun Style</a>
+                </div>
+            </li>
         </ul>
 
 
@@ -118,7 +126,7 @@
 
 
     <footer>
-
+        
     </footer>
 </body>
 
