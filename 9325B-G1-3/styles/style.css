@@ -20,16 +20,19 @@ header{
     
     background-color: limegreen;
     color: white;
-    padding-top: 20px;
     height: 90px;
-    text-align: left;
 
 }
-
+/*Header*/
+#header{
+    padding-top: 1%;
+    float: center;
+}
 #p{
-    margin-left: 100px;
+    float: center;
 }
 
+/*navigation*/
 nav{
     
     background-color: green;
@@ -49,6 +52,7 @@ li{
     padding: 0 39.8px;
     
 }
+
 /*Dropdown Menu*/
 li.dropdown {
     display: inline-block;
@@ -72,4 +76,60 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*index*/
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+
+/*OrgStructure*/
+
+.org-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+#org img{
+    height: 100%;
+    width: 100%;
+}
+
+#org1 img {
+    height: 100%;
+    width: 100%;
+}
+
+/*Gallery*/
+
+.gal-container{
+    width: 300px;
+    margin: 0 auto;
+    
+}
+
+#bh img{
+    height: 100%;
+    width: 100%;
+}
+
+#bpark img{
+    height: 100%;
+    width: 100%;
+}
+
+#district img{
+    height: 100%;
+    width: 100%;   
+}
+
+#garden img{
+    height: 100%;
+    width: 100%;
+}
+
+/*Vison Mission*/
+
+#wrapper h2{
+    font-size: 40px;
 }
