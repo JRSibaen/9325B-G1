@@ -11,7 +11,6 @@ main, nav, header, footer, section, article, aside{
 body{
     width: 100%;
     margin: auto;
-    text-align: center;
     background-color: lightgrey;
 
 }
@@ -24,24 +23,16 @@ header{
 
 }
 /*Header*/
-#header{
-    padding-top: 1%;
-    float: center;
-}
-#p{
-    float: center;
-}
+
 
 /*navigation*/
 nav{
     
     background-color: green;
     color: white;
-    top: 13.2%;
+
     width: 100%;
     height: auto;
-    transition: top 0.3s;
-    
 }
 
 
