@@ -102,7 +102,7 @@ li.dropdown {
     font-size: 40px;
     color: white;
     text-align: center;
-    background: url("../images/BG.jpg") no-repeat center;
+    background: url("./BG.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -118,7 +118,7 @@ li.dropdown {
 #home-content2 {
     overflow: auto;
     min-height: 500px;
-    background: url("../images/BG2.png") no-repeat center;
+    background: url("./BG2.png") no-repeat center;
     background-size: cover;
 
 }
@@ -203,7 +203,7 @@ footer {
 
 #main-gallery {
     padding: 40px;
-    background-image: url(../images/BG3.jpg);
+    background-image: url(./BG3.jpg);
     overflow: auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ footer {
 /*About*/
 
 #about {
-    background-image: url(../images/BG3.jpg);
+    background-image: url(./BG3.jpg);
     overflow: auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
