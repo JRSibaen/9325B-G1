@@ -102,7 +102,7 @@ li.dropdown {
     font-size: 40px;
     color: white;
     text-align: center;
-    background: url("../images/BG.png") no-repeat center;
+    background: url("../images/BG.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -112,7 +112,7 @@ li.dropdown {
     padding: 20px;
     width: 80%;
     border-radius: 100px;
-    background-color:  rgba(13, 13, 13, .5);
+    background-color:  rgba(13, 13, 13, .7);
 }
 
 #home-content2 {
@@ -302,4 +302,22 @@ h3#about-head{
 
 .sidebar p{
     padding: 10px;
+}
+
+.org-con{
+    background-color: white;
+}
+
+.org-con h3{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    color: white;
+    background-color: skyblue;
+}
+
+#org-chart{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
 }
