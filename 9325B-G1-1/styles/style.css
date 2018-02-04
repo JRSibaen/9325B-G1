@@ -316,6 +316,11 @@ h3#about-head{
     background-color: skyblue;
 }
 
+.org-con p{
+    font-size: 18px;
+    padding: 20px;
+}
+
 #org-chart{
     margin-top: 40px;
     width: 100%;
