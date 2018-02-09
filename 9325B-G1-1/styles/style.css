@@ -37,6 +37,8 @@ header {
     font-family: monospace;
     padding: 10px;
     min-height: 55px;
+    width: 90%;
+    margin: auto;
 }
 
 #heading {
