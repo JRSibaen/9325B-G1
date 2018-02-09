@@ -114,7 +114,7 @@ li.dropdown {
     padding: 20px;
     width: 80%;
     border-radius: 100px;
-    background-color:  rgba(13, 13, 13, .7);
+    background-color: rgba(13, 13, 13, .7);
 }
 
 #home-content2 {
@@ -130,7 +130,7 @@ li.dropdown {
     padding: 1%;
     box-shadow: grey 0px 0px 15px;
     color: white;
-    width: 80%;
+    width: 90%;
     background-color: rgba(0, 0, 0, 0.85098);
     overflow: auto;
 }
@@ -171,7 +171,8 @@ td {
     border: 1px solid white;
     border-collapse: collapse;
     color: white;
-    text-align: center;
+    text-align: right;
+    padding-right: 40px;
 }
 
 .content table {
@@ -267,27 +268,28 @@ footer {
     background-color: rgba(0, 138, 230, 0.90);
 }
 
-#history{
+#history {
     float: left;
     margin: 30px auto;
     box-shadow: grey 0px 0px 15px;
     color: white;
     width: 75%;
+    min-height: 600px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-h3#about-head{
+h3#about-head {
     text-align: center;
     padding: 2%;
     font-size: 25px;
     background-color: rgba(0, 138, 230, 0.4);
 }
 
-#history p{
+#history p {
     padding: 3%;
 }
 
-.sidebar{
+.sidebar {
     float: right;
     color: white;
     width: 24%;
@@ -295,22 +297,22 @@ h3#about-head{
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.sidebar h3{
+.sidebar h3 {
     padding: 3%;
     text-align: center;
     font-size: 22px;
     background-color: rgba(0, 138, 230, 0.4);
 }
 
-.sidebar p{
+.sidebar p {
     padding: 10px;
 }
 
-.org-con{
+.org-con {
     background-color: white;
 }
 
-.org-con h3{
+.org-con h3 {
     text-align: center;
     font-size: 35px;
     padding: 20px;
@@ -318,13 +320,120 @@ h3#about-head{
     background-color: skyblue;
 }
 
-.org-con p{
-    font-size: 18px;
+.org-con p {
+    font-size: 1.05em;
     padding: 20px;
 }
 
-#org-chart{
+#org-chart {
     margin-top: 40px;
     width: 100%;
     height: auto;
+}
+
+/*
+For mobile view
+*/
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+
+    }
+
+    #heading {
+        float: none;
+    }
+
+    nav {
+        float: none;
+        width: 100%;
+        font-size: 18px;
+        margin: 10px 0 10px 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #home-content1 {
+        min-height: 400px;
+    }
+
+    #home-content1 p {
+        margin: auto;
+        margin-top: 150px;
+        padding: 20px;
+        width: 80%;
+        border-radius: 100px;
+        background-color: rgba(13, 13, 13, .7);
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    f-left,
+    f-right {
+        float: none;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content div {
+        width: 100%;
+    }
+
+    .content table {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .gal-container {
+        padding: 0 6px;
+        float: left;
+        width: 50%;
+    }
+
+    #history {
+        width: 100%;
+        min-height: 410px;
+    }
+
+    .sidebar {
+        width: 33%;
+        margin-bottom: 10px;
+        min-height: 210px;
+    }
+
+
+}
+
+@media (min-width: 1600px) {
+    * {
+        font-size: 1.1em;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    #home-content1 {
+        min-height: 900px;
+    }
+
+    #home-content1 {
+        padding: 200px;
+        font-size: 2.2em;
+    }
+    
+    #history {
+        min-height: 1200px;
+    }
 }
