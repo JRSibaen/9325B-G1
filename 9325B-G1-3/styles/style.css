@@ -193,8 +193,9 @@ li.dropdown {
 
 #bh {
     float: left;
-    min-height: 500px;
+    height: 100%;
     width: 50%;
+    clear: left;
 }
 
 #bh img {
@@ -206,37 +207,38 @@ li.dropdown {
 #bpark {
     float: left;
     width: 50%;
-    min-height: 500px;
-
+    height: 50%;
+    clear: right;
 }
 
 #bpark img {
     float: left;
-    height: 250px;
+    height: 50%;
     width: 33.333%;
 }
 
 #district {
     float: left;
-    min-height: 500px;
+    height: 100%;
     width: 50%;
+    clear: left;
 }
 
 #district img {
     float: left;
-    height: 500px;
+    height: 100%;
     width: 100%;
 }
 
 #garden {
     float: left;
-    min-height: 500px;
+    height: 100%;
     width: 50%;
 }
 
 #garden img {
     float: left;
-    height: 250px;
+    height: 50%;
     width: 33.33%;
 }
 
