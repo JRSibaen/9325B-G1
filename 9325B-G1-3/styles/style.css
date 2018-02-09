@@ -1,50 +1,119 @@
+@font-face {
+    font-family: Time-burner;
+    src: url(timeburnernormal.ttf);
+}
+
+@font-face {
+    font-family: Painter;
+    src: url(painter.ttf);
+}
+
 * {
-    
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Time-burner;
 }
-main, nav, header, footer, section, article, aside{
+
+main,
+nav,
+header,
+footer,
+section,
+article,
+aside {
     display: block;
 }
 
-body{
+body {
     width: 100%;
     margin: auto;
-    background-color: lightgrey;
-
+    background: url(BG.jpeg) no-repeat center;
+    background-size: cover;
 }
 
-header{
-    
+main {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(35, 144, 35, .2);
+    overflow: auto;
+}
+
+main section br {
+    display: none;
+}
+
+main section h2 {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(30, 123, 30, .8);
+    font-size: 2.5em;
+    font-family: Painter;
+}
+
+footer {
+    background-color: limegreen;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+/*Header*/
+
+header {
+
     background-color: limegreen;
     color: white;
     height: 90px;
 
 }
-/*Header*/
+
+#header {
+    padding-top: 20px;
+}
+
+header img {
+    float: left;
+}
+
 
 
 /*navigation*/
-nav{
-    
+
+nav {
+    clear: both;
     background-color: green;
     color: white;
-
     width: 100%;
-    height: auto;
 }
 
+nav ul {
+    text-align: center;
+}
 
-
-li{
+nav li {
     display: inline;
-    font-size: 20px;
-    padding: 0 39.8px;
-    
+    font-size: 1.3em;
+    padding: 10px 15px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li a:visited {
+    color: white;
+}
+
+nav li a:link {
+    color: white;
+}
+
+nav li a:hover {
+    color: limegreen;
 }
 
 /*Dropdown Menu*/
+
 li.dropdown {
     display: inline-block;
 }
@@ -52,7 +121,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: green;
     min-width: 160px;
 }
 
@@ -63,6 +132,7 @@ li.dropdown {
 
 .dropdown-content a:hover {
     background-color: whitesmoke;
+    color: green;
 }
 
 .dropdown:hover .dropdown-content {
@@ -70,18 +140,35 @@ li.dropdown {
 }
 
 /*index*/
-.container{
-    width: 700px;
-    margin: 0 auto;
+
+.container {
+    color: white;
+    width: 85%;
+    margin: 2% auto;
+    background-color: rgba(5, 21, 5, .7);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.container h3 {
+    font-family: Painter;
+    font-size: 1.6em;
+    padding: 10px;
+}
+
+.container p {
+    font-size: 1.1em;
+    padding: 12px;
 }
 
 /*OrgStructure*/
 
-.org-container{
+.org-container {
     width: 1000px;
     margin: 0 auto;
 }
-#org img{
+
+#org img {
     height: 100%;
     width: 100%;
 }
@@ -93,34 +180,135 @@ li.dropdown {
 
 /*Gallery*/
 
-.gal-container{
-    width: 300px;
-    margin: 0 auto;
-    
+.gal-container {
+    width: 100%;
 }
 
-#bh img{
+.gal-container p {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgba(5, 21, 5, .5);
+}
+
+#bh {
+    float: left;
+    min-height: 500px;
+    width: 50%;
+}
+
+#bh img {
+    float: left;
     height: 100%;
     width: 100%;
 }
 
-#bpark img{
-    height: 100%;
+#bpark {
+    float: left;
+    width: 50%;
+    min-height: 500px;
+
+}
+
+#bpark img {
+    float: left;
+    height: 250px;
+    width: 33.333%;
+}
+
+#district {
+    float: left;
+    min-height: 500px;
+    width: 50%;
+}
+
+#district img {
+    float: left;
+    height: 500px;
     width: 100%;
 }
 
-#district img{
-    height: 100%;
-    width: 100%;   
+#garden {
+    float: left;
+    min-height: 500px;
+    width: 50%;
 }
 
-#garden img{
-    height: 100%;
-    width: 100%;
+#garden img {
+    float: left;
+    height: 250px;
+    width: 33.33%;
 }
 
 /*Vison Mission*/
 
-#wrapper h2{
-    font-size: 40px;
+#wrapper {
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+#wrapper main {
+    color: white;
+    background-color: rgba(35, 144, 35, 0);
+}
+
+#wrapper section {
+    border-radius: 30px;
+    margin: 30px;
+    background-color: rgba(35, 144, 35, .2);
+
+}
+
+#wrapper h2 {
+    font-size: 30px;
+}
+
+#wrapper p {
+    text-align: center;
+    font-size: 30px;
+    min-height: 200px;
+}
+
+
+/*About*/
+
+#about {
+    color: white;
+    width: 100%;
+    margin: auto;
+    color: white;
+    background-color: rgba(35, 144, 35, 0);
+    overflow: auto;
+}
+
+#about .container {
+    background-color: rgba(35, 144, 35, .0);
+}
+
+#history {
+    width: 68%;
+    float: left;
+    background-color: rgba(35, 144, 35, .2);
+}
+
+#about .container h3 {
+    font-size: 2.5em;
+    background-color: rgba(35, 144, 35, .8);
+}
+
+#about h2 {
+    font-size: 2.5em;
+}
+
+#about p {
+    text-align: center;
+    font-size: 30px;
+    min-height: 200px;
+}
+
+#about #sidebar {
+    float: right;
+    width: 30%;
+    background-color: rgba(35, 144, 35, .2);
 }
