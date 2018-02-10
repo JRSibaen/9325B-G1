@@ -292,6 +292,7 @@ li.dropdown {
     width: 68%;
     float: left;
     background-color: rgba(35, 144, 35, .2);
+    min-height: 900px;
 }
 
 #about .container h3 {
@@ -313,4 +314,8 @@ li.dropdown {
     float: right;
     width: 30%;
     background-color: rgba(35, 144, 35, .2);
+}
+
+.dark {
+    display: none;
 }
