@@ -1,3 +1,148 @@
-*{
-	color: black;
+/*Fonts*/
+
+@font-face {
+    font-family: blowbrush;
+    src: url(blowbrush.otf);
+}
+
+@font-face {
+    font-family: selima;
+    src: url(selima.otf);
+}
+
+
+@font-face {
+    font-family: anurati;
+    src: url(anurati.otf);
+}
+
+
+* {
+    color: black;
+    font-family: blowbrush;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 1%;
+    margin: 1%;
+}
+
+/*Header*/
+
+header {
+    margin: auto;
+}
+
+header .container {
+    padding: 0;
+    margin: 0;
+}
+
+#heading {
+    background: red;
+    padding: 3%;
+    text-align: center;
+}
+
+#heading h1 {
+    font-size: 4vw;
+    font-family: selima;
+}
+
+.highlight {
+    font-family: blowbrush;
+}
+
+img.logo {
+    display: none;
+}
+
+section h2 {
+    display: none;
+}
+
+/*Navigation*/
+
+nav {
+    background-color: blue;
+    padding: 1%;
+    font-size: 20px;
+    font-size: 2.5vw;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+.current a {
+    color: rgb(0, 138, 230);
+}
+
+/*Advocacies Dropdown*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Main*/
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+#home-content1 {
+    min-height: 500px;
+    position: relative;
+    background-color: rebeccapurple;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    vertical-align: middle;
+}
+
+#home-content1 .container {
+    background-color: aquamarine;
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
