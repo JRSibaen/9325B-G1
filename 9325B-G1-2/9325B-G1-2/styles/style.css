@@ -219,3 +219,16 @@ img{
   }
 }
 
+/* gallery image */
+figure {
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+  max-width: 40%;
+  float: left;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
