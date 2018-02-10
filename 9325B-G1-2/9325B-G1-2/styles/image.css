@@ -1,0 +1,11 @@
+.col-img {
+  -ms-flex-preferred-size: 41.667%;
+  flex-basis: 50%;
+  max-width: 50%;
+  float: left;
+}
+
+.col-img img {
+	width: 100%;
+	height: auto;
+}
