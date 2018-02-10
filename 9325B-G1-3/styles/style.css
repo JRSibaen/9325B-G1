@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: Painter;
-    src: url(painter.ttf);
+    font-family: Times;
+    src: url(TIMES.TTF);
 }
 
 * {
@@ -47,7 +47,7 @@ main section h2 {
     padding: 15px;
     background-color: rgba(30, 123, 30, .8);
     font-size: 2.5em;
-    font-family: Painter;
+    font-family: Times;
 }
 
 footer {
@@ -151,7 +151,7 @@ li.dropdown {
 }
 
 .container h3 {
-    font-family: Painter;
+    font-family: Times;
     font-size: 1.6em;
     padding: 10px;
 }
