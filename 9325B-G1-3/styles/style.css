@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: Painter;
-    src: url(painter.ttf);
+    font-family: Times;
+    src: url(TIMES.TTF);
 }
 
 * {
@@ -47,7 +47,7 @@ main section h2 {
     padding: 15px;
     background-color: rgba(30, 123, 30, .8);
     font-size: 2.5em;
-    font-family: Painter;
+    font-family: Times;
 }
 
 footer {
@@ -152,7 +152,7 @@ li.dropdown {
 }
 
 .container h3 {
-    font-family: Painter;
+    font-family: Times;
     font-size: 1.6em;
     padding: 10px;
 }
@@ -293,6 +293,7 @@ li.dropdown {
     width: 68%;
     float: left;
     background-color: rgba(35, 144, 35, .2);
+    min-height: 900px;
 }
 
 #about .container h3 {
@@ -314,4 +315,8 @@ li.dropdown {
     float: right;
     width: 30%;
     background-color: rgba(35, 144, 35, .2);
+}
+
+.dark {
+    display: none;
 }
