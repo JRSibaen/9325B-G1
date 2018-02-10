@@ -126,7 +126,7 @@ li.dropdown {
 }
 
 .content {
-    margin: 30px auto;
+    margin: 5% auto;
     padding: 1%;
     box-shadow: grey 0px 0px 15px;
     color: white;
@@ -135,12 +135,20 @@ li.dropdown {
     overflow: auto;
 }
 
-.f-left {
+.f-left{
     float: left;
 }
 
-.f-right {
+.f-right{
     float: right;
+}
+
+article.f-left{
+    float: none;
+}
+
+article.f-right{
+    float: none;
 }
 
 .content img {
@@ -417,11 +425,13 @@ For mobile view
 
 @media (min-width: 1600px) {
     * {
-        font-size: 1.1em;
+        font-size: 1.07em;
     }
 
     .content {
         width: 95%;
+        float: none;
+        margin: 5% auto;
     }
 
     #home-content1 {
@@ -434,6 +444,6 @@ For mobile view
     }
     
     #history {
-        min-height: 1200px;
+        min-height: 1100px;
     }
 }
