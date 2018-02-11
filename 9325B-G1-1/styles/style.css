@@ -329,6 +329,7 @@ h3#about-head {
 }
 
 .org-con p {
+	text-align: center;
     font-size: 1.05em;
     padding: 20px;
 }
