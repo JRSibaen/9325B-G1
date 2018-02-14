@@ -645,7 +645,11 @@ footer {
     }
 }
 
-@media (max-width: 801px) {
+@media (max-width: 768px) {
+    #home-content1 p{
+        font-size: 48px;
+    }
+    
     #home-content2 {
         display: block;
     }
@@ -657,7 +661,16 @@ footer {
     #home-content2 article.content {
         margin: 1vh auto;
         display: block;
-        width: 80%;
+        width: 90%;
+        font-size: 14px;
+    }
+    
+    #home-content2 article.content h3{
+        font-size: 18px;
+    }
+    
+    .default article.content h3{
+        font-size: 18px;
     }
 
     #home-content2 article img {
@@ -683,6 +696,7 @@ footer {
         margin: 1vh auto;
         display: block;
         width: 80%;
+        font-size: 14px;
     }
 
     .default article img {
@@ -692,7 +706,6 @@ footer {
     }
 
     /*gallery*/
-
     .gal-container {
         float: none;
         width: 80.00%;
@@ -705,7 +718,27 @@ footer {
         letter-spacing: 0.5vw;
         font-size: 2vw;
     }
-
     /*end of gallery*/
+    .org-con p {
+        font-size: 14px;
+    }
+
+    .page-title {
+        font-size: 18px;
+    }
+
+    #history {
+        font-size: 14px;
+    }
+
+    .sidebar {
+        font-size: 14px;
+        float: none;
+        width: 90%;
+    }
+
+    .sidebar h3 {
+        font-size: 16px;
+    }
 
 }
