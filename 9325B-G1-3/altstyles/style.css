@@ -1,3 +1,28 @@
 *{
-	color: black;
+    animation-name: changebg;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+}
+body {
+        animation-name: changebg;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+}
+@keyframes changebg{
+    0% {
+        background: url(minions.jpg)
+        background-size: cover;
+    }
+    25% {
+        background: url(minions1.jpg)
+        background-size: cover;
+    }
+    50% {
+        background: url(minions2.jpg)
+        background-size: cover;
+    }
+    75% {
+        background: url(minions3.jpg)
+        background-size: cover;
+    }
 }
