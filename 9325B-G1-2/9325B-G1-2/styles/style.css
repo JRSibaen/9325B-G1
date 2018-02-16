@@ -232,3 +232,16 @@ figure img {
   height: auto;
 }
 
+* TABLE */
+th {
+    background-color: #56a79a;
+	color: white;
+}
+
+tr td {
+	border: 1px solid black;
+}
+
+table {
+    border: 3px solid #4074a5;
+}
