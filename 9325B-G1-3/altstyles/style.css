@@ -1,28 +1,529 @@
-*{
-    animation-name: changebg;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
+@font-face {
+    font-family: Time-burner;
+    src: url(timeburnernormal.ttf);
 }
+
+@font-face {
+    font-family: painter;
+    src: url(painter.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Time-burner;
+}
+
+main,
+nav,
+header,
+footer,
+section,
+article,
+aside {
+    display: block;
+}
+
 body {
-        animation-name: changebg;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
+    width: 100%;
+    margin: auto;
+    animation: changebg 10s;
+    animation-iteration-count: infinite;
 }
-@keyframes changebg{
-    0% {
-        background: url(minions.jpg)
+
+main {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(35, 144, 35, .2);
+    overflow: auto;
+}
+
+main section br {
+    display: none;
+}
+
+main section h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 2.5em;
+    font-family: painter;
+    color: black;
+    font-size: 50px;
+}
+
+
+
+footer {
+    background-color: limegreen;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+/*Header*/
+
+header {
+
+    background-color: limegreen;
+    color: white;
+    height: 90px;
+    animation: changecolor .5s;
+    animation-iteration-count: infinite;
+
+}
+
+#header {
+    padding-top: 20px;
+}
+
+header img {
+    float: left;
+}
+
+
+
+/*navigation*/
+
+nav {
+    clear: both;
+    background-color: greenyellow;
+    color: green;
+    width: 100%;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+	text-transform: capitalize;
+    display: inline;
+    font-size: 1.3em;
+    padding: 10px 15px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li a:visited {
+    color: green;
+}
+
+nav li a:link {
+    color: green;
+}
+
+nav li a:hover {
+    color: yellow;
+    
+    
+}
+
+/*Dropdown Menu*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: whitesmoke;
+    color: green;
+    animation: bounce 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*index*/
+
+.container {
+    color: white;
+    width: 85%;
+    margin: 2% auto;
+    background-color: rgba(5, 21, 5, .7);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.container h3 {
+    font-family: painter;
+    font-size: 1.6em;
+    padding: 10px;
+    animation: bounceleft 5s;
+    margin: auto;
+    animation-iteration-count: infinite;
+}
+
+
+.container p {
+    font-size: 1.1em;
+    padding: 12px;
+    transform: scaleX(-1.00);
+}
+
+.container p:hover {
+    animation: invert 3s;
+    animation-iteration-count: infinite;
+}
+
+
+/*OrgStructure*/
+
+.org-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#org img {
+    height: 100%;
+    width: 100%;
+}
+
+#org1 img {
+    height: 100%;
+    width: 100%;
+}
+
+/*Gallery*/
+
+.gal-container {
+    width: 100%;
+}
+
+.gal-container p {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    animation: textcolor 10s;
+    animation-iteration-count: infinite;
+}
+
+#bh {
+    float: left;
+    height: 100%;
+    width: 50%;
+    clear: left;
+}
+
+#bh img {
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+#bpark {
+    float: left;
+    width: 50%;
+    height: 50%;
+    clear: right;
+}
+
+#bpark img {
+    float: left;
+    height: 50%;
+    width: 33.333%;
+}
+
+#district {
+    float: left;
+    height: 100%;
+    width: 50%;
+    clear: left;
+}
+
+#district img {
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+#garden {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+#garden img {
+    float: left;
+    height: 50%;
+    width: 33.33%;
+}
+
+/*Vison Mission*/
+
+#wrapper {
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+#wrapper main {
+    color: white;
+    background-color: rgba(35, 144, 35, 0);
+}
+
+#wrapper section {
+    border-radius: 30px;
+    margin: 30px;
+    background-color: rgba(5, 21, 5, .7);
+
+}
+
+#wrapper h2 {
+    font-size: 30px;
+    color: white;
+
+    
+}
+
+#wrapper p {
+    text-align: center;
+    font-size: 30px;
+    min-height: 200px;
+}
+
+
+/*About*/
+
+#about {
+    color: white;
+    width: 100%;
+    margin: auto;
+    color: white;
+    background-color: rgba(35, 144, 35, 0);
+    overflow: auto;
+}
+
+#about .container {
+    background-color: rgba(35, 144, 35, .0);
+}
+
+#history {
+    width: 68%;
+    float: left;
+    background-color: rgba(5, 21, 5, .7);
+    min-height: 900px;
+}
+
+#about .container h3 {
+    font-size: 2.5em;
+    background-color: rgba(35, 144, 35, .8);
+}
+
+#about h2 {
+    font-size: 2.5em;
+}
+
+#about p {
+    text-align: center;
+    font-size: 30px;
+    min-height: 200px;
+}
+
+#about #sidebar {
+    float: right;
+    width: 30%;
+    background-color: rgba(5, 21, 5, .7);
+}
+
+.dark {
+    display: none;
+}
+
+
+/*keyframes*/
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes changecolor {
+    0%{
+        background-color: red;
+    }
+    
+     14.29%{
+        background-color: orange;
+    }
+    
+     28.58%{
+        background-color: yellow;
+    }
+    
+     42.87%{
+        background-color: green;
+    }
+    
+     57.16%{
+        background-color: blue;
+    }
+    
+     71.45%{
+        background-color: indigo;
+    }
+    
+     85.74%{
+        background-color: violet;
+    }
+    
+     100%{
+        background-color: red;
+    }
+    
+}
+
+@keyframes textcolor {
+    0%{
+        color: red;
+    }
+    
+     14.29%{
+       color: orange;
+    }
+    
+     28.58%{
+        color: yellow;
+    }
+    
+     42.87%{
+        color: green;
+    }
+    
+     57.16%{
+        color: blue;
+    }
+    
+     71.45%{
+        color: indigo;
+    }
+    
+     85.74%{
+        color: violet;
+    }
+    
+     100%{
+        color: red;
+    }
+    
+}
+
+@keyframes changebg {
+    0%{
+        background: url(minions.jpg) no-repeat center;
         background-size: cover;
     }
-    25% {
-        background: url(minions1.jpg)
+    
+    33.33%{
+        background: url(minions1.jpg) no-repeat center;
         background-size: cover;
     }
-    50% {
-        background: url(minions2.jpg)
+    
+    66.66%{
+        background: url(minions2.jpg) no-repeat center;
         background-size: cover;
     }
-    75% {
-        background: url(minions3.jpg)
+    
+    99.99%{
+        background: url(minions3.jpg) no-repeat center;
+        background-size: cover;
+    }
+    
+    100%{
+        background: url(minions.jpg) no-repeat center;
         background-size: cover;
     }
 }
+
+@keyframes invert{
+  0% {
+    transform:  scaleX(-1.00) ;
+  }
+  41% {
+    transform:  scaleX(1.00) ;
+  }
+  100% {
+    transform:  scaleX(1.00) ;
+  }
+}
+
+@keyframes bounceleft{
+  0% {
+    opacity:0;
+    transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    transform:  translate(30px,0px)  ;
+  }
+  80% {
+    transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@keyframes spring{
+  0% {
+    transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+  }
+  10% {
+    transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+  }
+  20% {
+    transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+  }
+  30% {
+    transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  40% {
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  50% {
+    transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  60% {
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  70% {
+    transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  80% {
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  90% {
+    transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  100% {
+    transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+  }
+}
+
