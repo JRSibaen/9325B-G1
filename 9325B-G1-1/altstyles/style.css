@@ -633,49 +633,51 @@ footer {
             background-color: rgba(0, 0, 0, .7);
         }
     }
-    .sidebar div{
-        transform:  scaleX(-1.00) ;
+    .sidebar div {
+        transform: scaleX(-1.00);
     }
-    
-    .sidebar div:hover{
-        animation: flip ease 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards; 
-    }
-    
-    
-@keyframes flip{
-  0% {
-    transform:  scaleX(-1.00) ;
-  }
-  100% {
-    transform:  scaleX(1.00) ;
-  }
-}@keyframes animationFrames{
-  0% {
-    transform:  skewY(-180deg) ;
-  }
-  100% {
-    transform:  skewY(1deg) ;
-  }
-}
 
-    h3#about-head{
-        animation: animationFrames ease 3s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards; /*when the spec is finished*/
+    .sidebar div:hover {
+        animation: flip ease 1s;
+        animation-iteration-count: 1;
+        transform-origin: 50% 50%;
+        animation-fill-mode: forwards;
     }
-    
-    @keyframes animationFrames{
-  0% {
-    transform:  skewY(-180deg) ;
-  }
-  100% {
-    transform:  skewY(1deg) ;
-  }
-}
+
+
+    @keyframes flip {
+        0% {
+            transform: scaleX(-1.00);
+        }
+        100% {
+            transform: scaleX(1.00);
+        }
+    }
+    @keyframes animationFrames {
+        0% {
+            transform: skewY(-180deg);
+        }
+        100% {
+            transform: skewY(1deg);
+        }
+    }
+
+    h3#about-head {
+        animation: animationFrames ease 3s;
+        animation-iteration-count: 1;
+        transform-origin: 50% 50%;
+        animation-fill-mode: forwards;
+        /*when the spec is finished*/
+    }
+
+    @keyframes animationFrames {
+        0% {
+            transform: skewY(-180deg);
+        }
+        100% {
+            transform: skewY(1deg);
+        }
+    }
 
 
 
@@ -691,10 +693,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-    #home-content1 p{
+    #home-content1 p {
         font-size: 48px;
     }
-    
+
     #home-content2 {
         display: block;
     }
@@ -709,12 +711,12 @@ footer {
         width: 90%;
         font-size: 14px;
     }
-    
-    #home-content2 article.content h3{
+
+    #home-content2 article.content h3 {
         font-size: 18px;
     }
-    
-    .default article.content h3{
+
+    .default article.content h3 {
         font-size: 18px;
     }
 
